@@ -46,7 +46,7 @@ def get_reports():
             file_data = report.read()
 
             werReportDict = xmltodict.parse(file_data)
-            werReportJsonString = json.dumps(werReportDict, ensure_ascii=False).encode('utf8')
+            werReportJsonString = json.dumps(werReportDict)
             werReportJsonData = json.loads(werReportJsonString)
 
             reports.append(werReportJsonData)
