@@ -117,7 +117,7 @@ class WerToGraph:
         jsonR['records'] = len(list)
         jsonR['rows'] = jsonList
 
-        return json.dumps(jsonR, ensure_ascii=False).encode('utf8')
+        return json.dumps(jsonR)
 
 if __name__ == '__main__':
 
