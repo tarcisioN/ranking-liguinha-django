@@ -111,7 +111,7 @@ class WerToGraph:
             jsonC['pontosDerrota'] = str(score_to_concede[i[0]])
             jsonR[personIdName[i[0]]] = jsonC
 
-        return json.dumps(jsonR)
+        return json.dumps(jsonR, ensure_ascii=False).encode('utf8')
 
 if __name__ == '__main__':
 
