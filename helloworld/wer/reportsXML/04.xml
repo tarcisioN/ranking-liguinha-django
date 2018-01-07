@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Standings>
+  <Team Rank="1" Name="Gonçalves, Anderson" DCI="9317016000" MatchPoints="9" MatchResultsPWDB="3/3/0/0" OpponentMatchWinPercent="55,5556" GamesWinPercent="100" OpponentsGameWinPercent="51,4286" />
+  <Team Rank="2" Name="Martins, Leonardo" DCI="7315220712" MatchPoints="7" MatchResultsPWDB="3/2/1/0" OpponentMatchWinPercent="36,9259" GamesWinPercent="83,3333" OpponentsGameWinPercent="30" />
+  <Team Rank="3" Name="Dimitriadis, Nikolaos Mikail" DCI="9223741815" MatchPoints="6" MatchResultsPWDB="3/2/0/0" OpponentMatchWinPercent="66,5556" GamesWinPercent="57,1429" OpponentsGameWinPercent="54,1667" />
+  <Team Rank="4" Name="Knoller De Souza, Pedro" DCI="4115950505" MatchPoints="6" MatchResultsPWDB="3/2/0/0" OpponentMatchWinPercent="59,2592" GamesWinPercent="57,1429" OpponentsGameWinPercent="63,3333" />
+  <Team Rank="5" Name="Ferreira, Jorge" DCI="4102282391" MatchPoints="6" MatchResultsPWDB="3/2/0/0" OpponentMatchWinPercent="44,2222" GamesWinPercent="62,5" OpponentsGameWinPercent="25,7143" />
+  <Team Rank="6" Name="Almeida, Igor" DCI="6114351915" MatchPoints="4" MatchResultsPWDB="3/1/1/0" OpponentMatchWinPercent="59,2593" GamesWinPercent="50" OpponentsGameWinPercent="60,1587" />
+  <Team Rank="7" Name="Ferreira Leite Coelho, Diogo" DCI="6300478069" MatchPoints="3" MatchResultsPWDB="3/1/0/0" OpponentMatchWinPercent="70,2593" GamesWinPercent="40" OpponentsGameWinPercent="67,7778" />
+  <Team Rank="8" Name="Pinto, Thiago" DCI="2248758" MatchPoints="3" MatchResultsPWDB="2/0/0/1" OpponentMatchWinPercent="55,5556" GamesWinPercent="40" OpponentsGameWinPercent="53,5714" />
+  <Team Rank="9" Name="Pacheco, Ian" DCI="6300264460" MatchPoints="0" MatchResultsPWDB="3/0/0/0" OpponentMatchWinPercent="70,3704" GamesWinPercent="0" OpponentsGameWinPercent="67,6587" />
+  <Team Rank="10" Name="Loureiro, Franklin" DCI="5114407488" MatchPoints="0" MatchResultsPWDB="2/0/0/0" OpponentMatchWinPercent="50" GamesWinPercent="20" OpponentsGameWinPercent="51,25" />
+</Standings>

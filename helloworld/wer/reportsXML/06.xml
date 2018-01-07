@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Standings>
+  <Team Rank="1" Name="Jones, Erick" DCI="7103717164" MatchPoints="12" MatchResultsPWDB="4/4/0/0" OpponentMatchWinPercent="68,75" GamesWinPercent="88,8889" OpponentsGameWinPercent="63,8258" />
+  <Team Rank="2" Name="Dutra, Marcos" DCI="6111409015" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="68,75" GamesWinPercent="63,6364" OpponentsGameWinPercent="62,2222" />
+  <Team Rank="3" Name="Maia, Felipe" DCI="6208465663" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="58,25" GamesWinPercent="66,6667" OpponentsGameWinPercent="53,4722" />
+  <Team Rank="4" Name="Pinto, Thiago" DCI="2248758" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="56,25" GamesWinPercent="60" OpponentsGameWinPercent="57,298" />
+  <Team Rank="5" Name="Pereira, Arthur" DCI="7315200809" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="54" GamesWinPercent="75" OpponentsGameWinPercent="47,2222" />
+  <Team Rank="6" Name="Almeida, Igor" DCI="6114351915" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="62,5" GamesWinPercent="50" OpponentsGameWinPercent="63,548" />
+  <Team Rank="7" Name="Pacheco, Ian" DCI="6300264460" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="58,25" GamesWinPercent="50" OpponentsGameWinPercent="54,1667" />
+  <Team Rank="8" Name="Martins, Leonardo" DCI="7315220712" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="54" GamesWinPercent="50" OpponentsGameWinPercent="49,3056" />
+  <Team Rank="9" Name="Felicio, Richard" DCI="4431409503" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="54" GamesWinPercent="50" OpponentsGameWinPercent="40,7576" />
+  <Team Rank="10" Name="Dimitriadis, Nikolaos Mikail" DCI="9223741815" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="47,75" GamesWinPercent="60" OpponentsGameWinPercent="42,0833" />
+  <Team Rank="11" Name="Menezes, Leandro" DCI="1315222640" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="47,75" GamesWinPercent="55,5556" OpponentsGameWinPercent="33,75" />
+  <Team Rank="12" Name="Gonçalves, Anderson" DCI="9317016000" MatchPoints="3" MatchResultsPWDB="4/1/0/0" OpponentMatchWinPercent="58,25" GamesWinPercent="25" OpponentsGameWinPercent="50,4167" />
+  <Team Rank="13" Name="Mattos, Thiago" DCI="1318674007" MatchPoints="3" MatchResultsPWDB="4/1/0/0" OpponentMatchWinPercent="52" GamesWinPercent="25" OpponentsGameWinPercent="54,2298" />
+  <Team Rank="14" Name="Knoller De Souza, Pedro" DCI="4115950505" MatchPoints="3" MatchResultsPWDB="4/1/0/0" OpponentMatchWinPercent="41,5" GamesWinPercent="36,3636" OpponentsGameWinPercent="39,5833" />
+  <Team Rank="15" Name="Godinho, Cristian" DCI="1300277279" MatchPoints="3" MatchResultsPWDB="4/1/0/0" OpponentMatchWinPercent="41,5" GamesWinPercent="33,3333" OpponentsGameWinPercent="36,5909" />
+  <Team Rank="16" Name="Nunes, Tarcisio" DCI="3070001213" MatchPoints="0" MatchResultsPWDB="4/0/0/0" OpponentMatchWinPercent="41,5" GamesWinPercent="0" OpponentsGameWinPercent="40,9722" />
+</Standings>

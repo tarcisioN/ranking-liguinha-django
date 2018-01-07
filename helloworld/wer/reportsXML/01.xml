@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Standings>
+  <Team Rank="1" Name="Knoller De Souza, Pedro" DCI="4115950505" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="60,4166" GamesWinPercent="66,6667" OpponentsGameWinPercent="61,4584" />
+  <Team Rank="2" Name="Menezes, Leandro" DCI="1315222640" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="58,25" GamesWinPercent="66,6667" OpponentsGameWinPercent="51,3258" />
+  <Team Rank="3" Name="Almeida, Igor" DCI="6114351915" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="52" GamesWinPercent="63,6364" OpponentsGameWinPercent="49,3056" />
+  <Team Rank="4" Name="Felicio, Richard" DCI="4431409503" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="37,25" GamesWinPercent="66,6667" OpponentsGameWinPercent="32,6389" />
+  <Team Rank="5" Name="De Albuquerque, Bruno Felipe" DCI="5114365660" MatchPoints="7" MatchResultsPWDB="4/2/1/0" OpponentMatchWinPercent="54,0833" GamesWinPercent="62,5" OpponentsGameWinPercent="53,4722" />
+  <Team Rank="6" Name="Caetano Dos Santos, Diogo" DCI="7511667730" MatchPoints="7" MatchResultsPWDB="4/2/1/0" OpponentMatchWinPercent="49,8333" GamesWinPercent="66,6667" OpponentsGameWinPercent="44,7917" />
+  <Team Rank="7" Name="Maia, Felipe" DCI="6208465663" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="64,5" GamesWinPercent="50" OpponentsGameWinPercent="55,4924" />
+  <Team Rank="8" Name="Gonçalves, Anderson" DCI="9317016000" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="60,3333" GamesWinPercent="55,5556" OpponentsGameWinPercent="54,4508" />
+  <Team Rank="9" Name="Dimitriadis, Nikolaos Mikail" DCI="9223741815" MatchPoints="3" MatchResultsPWDB="4/1/0/0" OpponentMatchWinPercent="60,3333" GamesWinPercent="25" OpponentsGameWinPercent="56,25" />
+  <Team Rank="10" Name="Pereira, Arthur" DCI="7315200809" MatchPoints="3" MatchResultsPWDB="3/0/0/1" OpponentMatchWinPercent="52,6667" GamesWinPercent="25" OpponentsGameWinPercent="47,2222" />
+  <Team Rank="11" Name="Barbier, Gabriel" DCI="1731385245" MatchPoints="3" MatchResultsPWDB="4/1/0/0" OpponentMatchWinPercent="49,9167" GamesWinPercent="25" OpponentsGameWinPercent="52,4306" />
+  <Team Rank="12" Name="Ferreira, Jorge" DCI="4102282391" MatchPoints="0" MatchResultsPWDB="3/0/0/0" OpponentMatchWinPercent="61" GamesWinPercent="25" OpponentsGameWinPercent="51,7677" />
+</Standings>

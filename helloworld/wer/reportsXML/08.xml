@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Standings>
+  <Team Rank="1" Name="Pacheco, Ian" DCI="6300264460" MatchPoints="10" MatchResultsPWDB="4/3/1/0" OpponentMatchWinPercent="60,4166" GamesWinPercent="70" OpponentsGameWinPercent="57,2286" />
+  <Team Rank="2" Name="Ferreira Leite Coelho, Diogo" DCI="6300478069" MatchPoints="10" MatchResultsPWDB="3/2/1/1" OpponentMatchWinPercent="58,3333" GamesWinPercent="77,7778" OpponentsGameWinPercent="58,5185" />
+  <Team Rank="3" Name="Pinto, Thiago" DCI="2248758" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="64,5833" GamesWinPercent="63,6364" OpponentsGameWinPercent="58,4091" />
+  <Team Rank="4" Name="Knoller De Souza, Pedro" DCI="4115950505" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="52,0833" GamesWinPercent="63,6364" OpponentsGameWinPercent="53,4091" />
+  <Team Rank="5" Name="Claudio, Rafael Caraciolo" DCI="7318670898" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="60,4166" GamesWinPercent="50" OpponentsGameWinPercent="57,2286" />
+  <Team Rank="6" Name="Martins, Leonardo" DCI="7315220712" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="56,1666" GamesWinPercent="50" OpponentsGameWinPercent="50,9091" />
+  <Team Rank="7" Name="Minato, Max" DCI="3032618615" MatchPoints="6" MatchResultsPWDB="3/1/0/1" OpponentMatchWinPercent="52,6667" GamesWinPercent="50" OpponentsGameWinPercent="44,5455" />
+  <Team Rank="8" Name="Pereira, Arthur" DCI="7315200809" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="49,9167" GamesWinPercent="50" OpponentsGameWinPercent="47,298" />
+  <Team Rank="9" Name="Maia, Felipe" DCI="6208465663" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="45,75" GamesWinPercent="50" OpponentsGameWinPercent="42,5" />
+  <Team Rank="10" Name="Mesquita, Rodrigo" DCI="2318706085" MatchPoints="5" MatchResultsPWDB="4/1/2/0" OpponentMatchWinPercent="50" GamesWinPercent="55,5556" OpponentsGameWinPercent="53,8194" />
+  <Team Rank="11" Name="Gonçalves, Anderson" DCI="9317016000" MatchPoints="4" MatchResultsPWDB="3/0/1/1" OpponentMatchWinPercent="58,3333" GamesWinPercent="37,5" OpponentsGameWinPercent="58,5185" />
+  <Team Rank="12" Name="Jones, Erick" DCI="7103717164" MatchPoints="4" MatchResultsPWDB="3/0/1/1" OpponentMatchWinPercent="55,5556" GamesWinPercent="50" OpponentsGameWinPercent="56,3973" />
+  <Team Rank="13" Name="Menezes, Leandro" DCI="1315222640" MatchPoints="0" MatchResultsPWDB="4/0/0/0" OpponentMatchWinPercent="50" GamesWinPercent="20" OpponentsGameWinPercent="50" />
+</Standings>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Standings>
+  <Team Rank="1" Name="Jones, Erick" DCI="7103717164" MatchPoints="12" MatchResultsPWDB="3/3/0/1" OpponentMatchWinPercent="47" GamesWinPercent="100" OpponentsGameWinPercent="43,3333" />
+  <Team Rank="2" Name="Ferreira Leite Coelho, Diogo" DCI="6300478069" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="64,5" GamesWinPercent="66,6667" OpponentsGameWinPercent="64,1667" />
+  <Team Rank="3" Name="Menezes, Leandro" DCI="1315222640" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="47,75" GamesWinPercent="66,6667" OpponentsGameWinPercent="43,75" />
+  <Team Rank="4" Name="Almeida, Igor" DCI="6114351915" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="41,5" GamesWinPercent="63,6364" OpponentsGameWinPercent="41,25" />
+  <Team Rank="5" Name="Pacheco, Ian" DCI="6300264460" MatchPoints="6" MatchResultsPWDB="3/1/0/1" OpponentMatchWinPercent="61" GamesWinPercent="60" OpponentsGameWinPercent="51,7677" />
+  <Team Rank="6" Name="Pinto, Jonathan Da Silva Devoto" DCI="2208317242" MatchPoints="6" MatchResultsPWDB="3/1/0/1" OpponentMatchWinPercent="61" GamesWinPercent="50" OpponentsGameWinPercent="54,5455" />
+  <Team Rank="7" Name="Gonçalves, Anderson" DCI="9317016000" MatchPoints="3" MatchResultsPWDB="4/1/0/0" OpponentMatchWinPercent="70,75" GamesWinPercent="30" OpponentsGameWinPercent="65,9091" />
+  <Team Rank="8" Name="Pereira, Arthur" DCI="7315200809" MatchPoints="3" MatchResultsPWDB="3/0/0/1" OpponentMatchWinPercent="66,6667" GamesWinPercent="25" OpponentsGameWinPercent="63,4344" />
+  <Team Rank="9" Name="Knoller De Souza, Pedro" DCI="4115950505" MatchPoints="3" MatchResultsPWDB="4/1/0/0" OpponentMatchWinPercent="64,5" GamesWinPercent="33,3333" OpponentsGameWinPercent="61,6667" />
+</Standings>

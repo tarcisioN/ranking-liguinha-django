@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Standings>
+  <Team Rank="1" Name="Pinto, Thiago" DCI="2248758" MatchPoints="12" MatchResultsPWDB="4/4/0/0" OpponentMatchWinPercent="47,8333" GamesWinPercent="88,8889" OpponentsGameWinPercent="49,8611" />
+  <Team Rank="2" Name="Felicio, Richard" DCI="4431409503" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="60,3333" GamesWinPercent="75" OpponentsGameWinPercent="51,0417" />
+  <Team Rank="3" Name="Mont'Alvão, Jorge" DCI="2232652728" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="49,9167" GamesWinPercent="66,6667" OpponentsGameWinPercent="49,8611" />
+  <Team Rank="4" Name="Dimitriadis, Leonardho" DCI="2103625543" MatchPoints="7" MatchResultsPWDB="4/2/1/0" OpponentMatchWinPercent="43,75" GamesWinPercent="50" OpponentsGameWinPercent="49,6528" />
+  <Team Rank="5" Name="Gonçalves, Anderson" DCI="9317016000" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="49,8333" GamesWinPercent="50" OpponentsGameWinPercent="43,6111" />
+  <Team Rank="6" Name="Fernandes, João Marcus" DCI="5318630552" MatchPoints="4" MatchResultsPWDB="4/1/1/0" OpponentMatchWinPercent="70,8333" GamesWinPercent="44,4444" OpponentsGameWinPercent="63,8889" />
+  <Team Rank="7" Name="Martins, Leonardo" DCI="7315220712" MatchPoints="4" MatchResultsPWDB="4/1/1/0" OpponentMatchWinPercent="49,9167" GamesWinPercent="37,5" OpponentsGameWinPercent="46,5278" />
+  <Team Rank="8" Name="Dimitriadis, Nikolaos Mikail" DCI="9223741815" MatchPoints="4" MatchResultsPWDB="4/1/1/0" OpponentMatchWinPercent="39,4167" GamesWinPercent="50" OpponentsGameWinPercent="32,1528" />
+  <Team Rank="9" Name="Menezes, Leandro" DCI="1315222640" MatchPoints="3" MatchResultsPWDB="4/1/0/0" OpponentMatchWinPercent="64,5833" GamesWinPercent="30" OpponentsGameWinPercent="63,8889" />
+  <Team Rank="10" Name="Mattos, Thiago" DCI="1318674007" MatchPoints="0" MatchResultsPWDB="4/0/0/0" OpponentMatchWinPercent="47,9167" GamesWinPercent="11,1111" OpponentsGameWinPercent="53,125" />
+</Standings>

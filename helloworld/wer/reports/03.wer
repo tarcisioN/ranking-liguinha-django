@@ -1,0 +1,153 @@
+<event sanctionnumber="17-12-10446830" eventguid="759b56e9-3c73-4f35-b69a-580bd4077f06" eventtypecode="SSM" orgname="Bolsa do Infinito" coordinator="192458" startdate="2017-11-27" postevententry="false" enddate="2001-01-01T00:00:00" format="STANDARD" eliminationType="3" iscasualreportonly="False" title="Magic Standard Showdown Ixalan" isstarted="True" status="8" batchid="" isplayoff="False" manualmatchround="0" notes="" numberofrounds="4" playoffstartround="0">
+  <participation>
+    <person id="7103717164" first="Erick" last="Jones" middle="E" country="BR" />
+    <person id="6208465663" first="Felipe" last="Maia" middle="S" country="BR" />
+    <person id="9317016000" first="Anderson" last="Gonçalves" middle="D" country="BR" />
+    <person id="7315200809" first="Arthur" last="Pereira" middle="K" country="BR" />
+    <person id="9223741815" first="Nikolaos Mikail" last="Dimitriadis" middle="" country="US" />
+    <person id="6114351915" first="Igor" last="Almeida" middle="J" country="BR" />
+    <person id="2248758" first="Thiago" last="Pinto" middle="D" country="BR" />
+    <person id="4431409503" first="Richard" last="Felicio" middle="J" country="BR" />
+    <person id="1318674007" first="Thiago" last="Mattos" middle="" country="BR" />
+    <person id="4115950505" first="Pedro" last="Knoller De Souza" middle="E" country="BR" />
+    <person id="6300264460" first="Ian" last="Pacheco" middle="D" country="BR" />
+    <person id="6111409015" first="Marcos" last="Dutra" middle="E" country="BR" />
+    <person id="1315222640" first="Leandro" last="Menezes" middle="" country="US" />
+    <person id="3070001213" first="Tarcisio" last="Nunes" middle="M" country="BR" />
+    <person id="1300277279" first="Cristian" last="Godinho" middle="" country="US" />
+    <person id="7315220712" first="Leonardo" last="Martins" middle="" country="US" />
+    <team id="1759" name="Felicio, Richard" status="2" eliminationround="0">
+      <member position="A" person="4431409503" />
+    </team>
+    <team id="1760" name="Gonçalves, Anderson" status="2" eliminationround="0">
+      <member position="A" person="9317016000" />
+    </team>
+    <team id="1761" name="Jones, Erick" status="2" eliminationround="0">
+      <member position="A" person="7103717164" />
+    </team>
+    <team id="1762" name="Menezes, Leandro" status="2" eliminationround="0">
+      <member position="A" person="1315222640" />
+    </team>
+    <team id="1763" name="Godinho, Cristian" status="2" eliminationround="0">
+      <member position="A" person="1300277279" />
+    </team>
+    <team id="1764" name="Nunes, Tarcisio" status="3" eliminationround="4">
+      <member position="A" person="3070001213" />
+    </team>
+    <team id="1765" name="Dutra, Marcos" status="2" eliminationround="0">
+      <member position="A" person="6111409015" />
+    </team>
+    <team id="1766" name="Pinto, Thiago" status="2" eliminationround="0">
+      <member position="A" person="2248758" />
+    </team>
+    <team id="1767" name="Knoller De Souza, Pedro" status="2" eliminationround="0">
+      <member position="A" person="4115950505" />
+    </team>
+    <team id="1768" name="Pereira, Arthur" status="2" eliminationround="0">
+      <member position="A" person="7315200809" />
+    </team>
+    <team id="1769" name="Dimitriadis, Nikolaos Mikail" status="2" eliminationround="0">
+      <member position="A" person="9223741815" />
+    </team>
+    <team id="1770" name="Pacheco, Ian" status="2" eliminationround="0">
+      <member position="A" person="6300264460" />
+    </team>
+    <team id="1771" name="Mattos, Thiago" status="2" eliminationround="0">
+      <member position="A" person="1318674007" />
+    </team>
+    <team id="1772" name="Maia, Felipe" status="2" eliminationround="0">
+      <member position="A" person="6208465663" />
+    </team>
+    <team id="1773" name="Almeida, Igor" status="2" eliminationround="0">
+      <member position="A" person="6114351915" />
+    </team>
+    <team id="1774" name="Martins, Leonardo" status="2" eliminationround="0">
+      <member position="A" person="7315220712" />
+    </team>
+    <role cd="PL" type="PA">
+      <ref person="7103717164" seq="1" />
+      <ref person="6111409015" seq="2" />
+      <ref person="6208465663" seq="3" />
+      <ref person="2248758" seq="4" />
+      <ref person="7315200809" seq="5" />
+      <ref person="6114351915" seq="6" />
+      <ref person="6300264460" seq="7" />
+      <ref person="7315220712" seq="8" />
+      <ref person="4431409503" seq="9" />
+      <ref person="9223741815" seq="10" />
+      <ref person="1315222640" seq="11" />
+      <ref person="9317016000" seq="12" />
+      <ref person="1318674007" seq="13" />
+      <ref person="4115950505" seq="14" />
+      <ref person="1300277279" seq="15" />
+      <ref person="3070001213" seq="16" />
+    </role>
+    <role cd="PL" type="DQ" />
+    <role cd="JG" type="PA" />
+  </participation>
+  <matches>
+    <round number="1" PlayFormat="STANDARD" date="2017-11-27T19:15:13" teamformat="false">
+      <match person="7103717164" opponent="6208465663" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="7315200809" opponent="9317016000" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="6114351915" opponent="9223741815" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="2248758" opponent="4431409503" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="1318674007" opponent="4115950505" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="6111409015" opponent="6300264460" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="1315222640" opponent="3070001213" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="7315220712" opponent="1300277279" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+    </round>
+    <round number="2" PlayFormat="STANDARD" date="2017-11-27T20:15:32" teamformat="false">
+      <match person="6111409015" opponent="2248758" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="7103717164" opponent="7315220712" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="6114351915" opponent="1315222640" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="7315200809" opponent="1318674007" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="9223741815" opponent="1300277279" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="6208465663" opponent="4431409503" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="6300264460" opponent="4115950505" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="9317016000" opponent="3070001213" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+    </round>
+    <round number="3" PlayFormat="STANDARD" date="2017-11-27T21:10:46" teamformat="false">
+      <match person="7315200809" opponent="6114351915" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="7103717164" opponent="6111409015" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="2248758" opponent="9223741815" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="6300264460" opponent="7315220712" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="6208465663" opponent="9317016000" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="1315222640" opponent="1318674007" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="4115950505" opponent="1300277279" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="4431409503" opponent="3070001213" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+    </round>
+    <round number="4" PlayFormat="STANDARD" date="2017-11-27T21:55:06" teamformat="false">
+      <match person="7103717164" opponent="7315200809" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="6111409015" opponent="6114351915" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="6208465663" opponent="6300264460" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="2248758" opponent="1315222640" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="7315220712" opponent="1318674007" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="9223741815" opponent="9317016000" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+      <match person="4431409503" opponent="4115950505" outcome="1" win="2" loss="1" draw="0" winbydrop="False" />
+      <match person="1300277279" opponent="3070001213" outcome="1" win="2" loss="0" draw="0" winbydrop="False" />
+    </round>
+  </matches>
+  <seats />
+  <pods>
+    <podround>
+      <round number="1" />
+      <round number="2" />
+      <round number="3" />
+      <round number="4" />
+    </podround>
+  </pods>
+  <log>
+    <entry date="2017-07-20T15:17:35" operation="CRE">4.4.0.607</entry>
+    <entry date="2017-11-27T19:15:13" operation="ROUND">Round Started 1</entry>
+    <entry date="2017-11-27T19:15:14" operation="MATCH">Matches created using match algorithm for round 1.</entry>
+    <entry date="2017-11-27T20:15:32" operation="ROUND">Round Started 2</entry>
+    <entry date="2017-11-27T20:15:33" operation="MATCH">Matches created using match algorithm for round 2.</entry>
+    <entry date="2017-11-27T21:10:46" operation="ROUND">Round Started 3</entry>
+    <entry date="2017-11-27T21:10:47" operation="MATCH">Matches created using match algorithm for round 3.</entry>
+    <entry date="2017-11-27T21:55:06" operation="ROUND">Round Started 4</entry>
+    <entry date="2017-11-27T21:55:08" operation="MATCH">Matches created using match algorithm for round 4.</entry>
+    <entry date="2017-11-27T22:56:11" operation="COM">Tournament Completed</entry>
+    <entry date="2017-11-27T22:56:12" operation="UPL">Results being uploaded.</entry>
+    <entry date="2017-11-27T22:56:12" operation="UPL">Results being uploaded.</entry>
+  </log>
+</event>

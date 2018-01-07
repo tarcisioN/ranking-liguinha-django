@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Standings>
+  <Team Rank="1" Name="Pinto, Thiago" DCI="2248758" MatchPoints="12" MatchResultsPWDB="4/4/0/0" OpponentMatchWinPercent="58,3333" GamesWinPercent="88,8889" OpponentsGameWinPercent="53,0303" />
+  <Team Rank="2" Name="Maia, Felipe" DCI="6208465663" MatchPoints="9" MatchResultsPWDB="4/3/0/0" OpponentMatchWinPercent="62,5" GamesWinPercent="66,6667" OpponentsGameWinPercent="60,8586" />
+  <Team Rank="3" Name="Felicio, Richard" DCI="4431409503" MatchPoints="7" MatchResultsPWDB="4/2/1/0" OpponentMatchWinPercent="56,1666" GamesWinPercent="55,5556" OpponentsGameWinPercent="48,9583" />
+  <Team Rank="4" Name="Martins, Leonardo" DCI="7315220712" MatchPoints="7" MatchResultsPWDB="4/2/1/0" OpponentMatchWinPercent="43,6667" GamesWinPercent="50" OpponentsGameWinPercent="50" />
+  <Team Rank="5" Name="Ferreira, Jorge" DCI="4102282391" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="60,25" GamesWinPercent="44,4444" OpponentsGameWinPercent="53,3775" />
+  <Team Rank="6" Name="Almeida, Igor" DCI="6114351915" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="54,0833" GamesWinPercent="54,5455" OpponentsGameWinPercent="51,3889" />
+  <Team Rank="7" Name="Ferreira Leite Coelho, Diogo" DCI="6300478069" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="54" GamesWinPercent="45,4545" OpponentsGameWinPercent="55,8081" />
+  <Team Rank="8" Name="Dimitriadis, Nikolaos Mikail" DCI="9223741815" MatchPoints="6" MatchResultsPWDB="4/2/0/0" OpponentMatchWinPercent="52,0833" GamesWinPercent="55,5556" OpponentsGameWinPercent="52,7778" />
+  <Team Rank="9" Name="Jones, Erick" DCI="7103717164" MatchPoints="4" MatchResultsPWDB="4/1/1/0" OpponentMatchWinPercent="49,9167" GamesWinPercent="44,4444" OpponentsGameWinPercent="43,4028" />
+  <Team Rank="10" Name="Gonçalves, Anderson" DCI="9317016000" MatchPoints="3" MatchResultsPWDB="4/1/0/0" OpponentMatchWinPercent="47,8333" GamesWinPercent="45,4545" OpponentsGameWinPercent="43,308" />
+  <Team Rank="11" Name="Knoller De Souza, Pedro" DCI="4115950505" MatchPoints="3" MatchResultsPWDB="4/1/0/0" OpponentMatchWinPercent="41,5" GamesWinPercent="33,3333" OpponentsGameWinPercent="39,4886" />
+  <Team Rank="12" Name="Almeida, Maciel" DCI="8102268967" MatchPoints="1" MatchResultsPWDB="4/0/1/0" OpponentMatchWinPercent="43,6667" GamesWinPercent="12,5" OpponentsGameWinPercent="44,4444" />
+</Standings>

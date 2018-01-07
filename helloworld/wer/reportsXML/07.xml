@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Standings>
+  <Team Rank="1" Name="Mesquita, Rodrigo" DCI="2318706085" MatchPoints="9" MatchResultsPWDB="3/3/0/0" OpponentMatchWinPercent="55,4445" GamesWinPercent="100" OpponentsGameWinPercent="35,7143" />
+  <Team Rank="2" Name="De Albuquerque, Bruno Felipe" DCI="5114365660" MatchPoints="6" MatchResultsPWDB="3/2/0/0" OpponentMatchWinPercent="66,6667" GamesWinPercent="50" OpponentsGameWinPercent="68,5185" />
+  <Team Rank="3" Name="Menezes, Leandro" DCI="1315222640" MatchPoints="6" MatchResultsPWDB="3/2/0/0" OpponentMatchWinPercent="55,5555" GamesWinPercent="57,1429" OpponentsGameWinPercent="58,7301" />
+  <Team Rank="4" Name="Almeida, Igor" DCI="6114351915" MatchPoints="6" MatchResultsPWDB="3/2/0/0" OpponentMatchWinPercent="48,1481" GamesWinPercent="55,5556" OpponentsGameWinPercent="47,619" />
+  <Team Rank="5" Name="Ferreira, Jorge" DCI="4102282391" MatchPoints="4" MatchResultsPWDB="3/1/1/0" OpponentMatchWinPercent="48,1481" GamesWinPercent="50" OpponentsGameWinPercent="51,8519" />
+  <Team Rank="6" Name="Martins, Leonardo" DCI="7315220712" MatchPoints="4" MatchResultsPWDB="3/1/1/0" OpponentMatchWinPercent="37,037" GamesWinPercent="50" OpponentsGameWinPercent="42,0635" />
+  <Team Rank="7" Name="Gonçalves, Anderson" DCI="9317016000" MatchPoints="3" MatchResultsPWDB="3/1/0/0" OpponentMatchWinPercent="59,2593" GamesWinPercent="42,8571" OpponentsGameWinPercent="54,2328" />
+  <Team Rank="8" Name="Felicio, Richard" DCI="4431409503" MatchPoints="3" MatchResultsPWDB="3/1/0/0" OpponentMatchWinPercent="48,037" GamesWinPercent="50" OpponentsGameWinPercent="33,3333" />
+  <Team Rank="9" Name="Claudio, Rafael Caraciolo" DCI="7318670898" MatchPoints="3" MatchResultsPWDB="3/1/0/0" OpponentMatchWinPercent="48,037" GamesWinPercent="33,3333" OpponentsGameWinPercent="35,7143" />
+  <Team Rank="10" Name="Tavares, Adolfo" DCI="1102350498" MatchPoints="0" MatchResultsPWDB="3/0/0/0" OpponentMatchWinPercent="55,5555" GamesWinPercent="0" OpponentsGameWinPercent="61,1111" />
+</Standings>
