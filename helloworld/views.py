@@ -1,128 +1,54 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import operator
-import xmltodict, json
+import json
 
-from helloworld.wer.graphUtil import Graph
-from helloworld.wer.scoreUtils import Score
-import glob
+import urllib3
+import xmltodict
+from django.http import HttpResponse
+from minio import Minio
 
+from helloworld.wer.werToGraph import WerToGraph
 
-class WerToGraph:
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+http = urllib3.PoolManager(
+                timeout=urllib3.Timeout.DEFAULT_TIMEOUT,
+                        cert_reqs='CERT_NONE',
+                        retries=urllib3.Retry(
+                            total=5,
+                            backoff_factor=0.2,
+                            status_forcelist=[500, 502, 503, 504]
+                        )
+            )
 
+client = Minio('35.188.18.243:9000',
+               access_key='IMJ789JGQG6RTMPAORBZ',
+               secret_key='j0Wi61KT/B6DOKFq1w8xwwAOARvE8fRWbXA63sDy', http_client=http)
 
-    def __init__(self, docs):
-        self.docs = docs
+def index(request):
 
+    wtg = WerToGraph(get_reports())
 
-    def run(self):
+    ranking = wtg.run()
 
-        score_factor = 3
-        score_factor2 = 0
-
-        score_utils = Score(score_factor, score_factor2)
-
-        werReportGraph = Graph()
-        personIdName = {}
-
-        # self.files = glob.glob('helloworld/reports/*.wer')
-
-        for werReportJsonData in self.docs:
-
-            # doc = open(f, 'rb')
-            # werReportDict = xmltodict.parse(doc)
-            # werReportJsonString = json.dumps(werReportDict, ensure_ascii=False).encode('utf8')
-            # werReportJsonData = json.loads(werReportJsonString)
-
-            participation = werReportJsonData['event']['participation']
-
-            for person in participation['person']:
-                personIdName[person['@id']] = person['@first'] + ' ' + person['@last']
-
-            matches = werReportJsonData['event']['matches']
-
-            for round in matches['round']:
-                for match in round['match']:
-                    if '@opponent' in match:
-                        if match['@win'] > match['@loss']:
-                            werReportGraph.add_directed_edge(match['@person'], match['@opponent'], 1)
-
-            # doc.close()
-
-        score_to_concede = {}
-
-        for v in werReportGraph:
-
-            vn_scoreToConcede = 0
-
-            for w in v.get_connections():
-
-                vw_score = 0
-
-                if w in v.adjacent:
-                    if v in w.adjacent:
-                        vw_score = v.get_weight(w) - w.get_weight(v)
-                    else:
-                        vw_score = v.get_weight(w)
-
-                if vw_score < 1:
-                    continue
-
-                vn_scoreToConcede += vw_score
-
-            score_to_concede[v.get_id()] = vn_scoreToConcede
-
-        total_score = {}
-
-        for v in werReportGraph:
-
-            v_total_score = 0
-
-            for w in v.get_connections():
-
-                v_simple_score = score_to_concede[w.get_id()]
-
-                vw_score = 0
-
-                if w in v.adjacent:
-
-                    if v in w.adjacent:
-                        vw_score = v.get_weight(w) - w.get_weight(v)
-                    else:
-                        vw_score = v.get_weight(w)
-
-                if vw_score < 1:
-                    vw_score = 0
-
-                v_total_score += v_simple_score * score_utils.score(vw_score)
-
-            str_v_total_score = "{0:.2f}".format(v_total_score)
-            #total_score[v.get_id()] = str_v_total_score
-            total_score[v.get_id()] = v_total_score
-
-        list = sorted_x = sorted(total_score.items(), key=operator.itemgetter(1), reverse=True)
+    return HttpResponse(ranking)
 
 
-        jsonList = []
+def get_reports():
 
-        for i in list:
-            jsonC = {}
-            jsonC['pontos'] = str(i[1])
-            jsonC['pontosDerrota'] = str(score_to_concede[i[0]])
-            jsonC['nome'] = personIdName[i[0]]
+    objects = client.list_objects('liguinha')
 
-            jsonList.append(jsonC)
+    reports = []
 
-        jsonR = {}
-        jsonR['records'] = len(list)
-        jsonR['rows'] = jsonList
+    for object in objects:
 
-        return json.dumps(jsonR)
+        if '.wer' in object.object_name:
+            report = client.get_object('liguinha', object.object_name)
 
-if __name__ == '__main__':
+            file_data = report.read()
 
-    docs = glob.glob('reports/*.wer')
+            werReportDict = xmltodict.parse(file_data)
+            werReportJsonString = json.dumps(werReportDict)
+            werReportJsonData = json.loads(werReportJsonString)
 
-    wtg = WerToGraph(docs)
+            reports.append(werReportJsonData)
 
-    print(wtg.run())
+    return reports
