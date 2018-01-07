@@ -1,23 +1,33 @@
 # -*- coding: utf-8 -*-
 import json
 
+import urllib3
 import xmltodict
 from django.http import HttpResponse
 from minio import Minio
 
 from helloworld.wer.werToGraph import WerToGraph
 
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+http = urllib3.PoolManager(
+                timeout=urllib3.Timeout.DEFAULT_TIMEOUT,
+                        cert_reqs='CERT_NONE',
+                        retries=urllib3.Retry(
+                            total=5,
+                            backoff_factor=0.2,
+                            status_forcelist=[500, 502, 503, 504]
+                        )
+            )
+
 client = Minio('35.188.18.243:9000',
-               access_key='XHWHNU67FSLL3XVVI3JZ',
-               secret_key='zuf+k016QPWOqMrFgb5TjzupjgNGYqb4Vnq2OTVmoMvk')
+               access_key='IMJ789JGQG6RTMPAORBZ',
+               secret_key='j0Wi61KT/B6DOKFq1w8xwwAOARvE8fRWbXA63sDy', http_client=http)
 
 def index(request):
 
     wtg = WerToGraph(get_reports())
 
     ranking = wtg.run()
-
-    print(ranking)
 
     return HttpResponse(ranking)
 
