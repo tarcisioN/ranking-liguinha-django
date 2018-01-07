@@ -103,15 +103,21 @@ class WerToGraph:
         list = sorted_x = sorted(total_score.items(), key=operator.itemgetter(1), reverse=True)
 
 
-        jsonR = {}
+        jsonList = []
 
         for i in list:
             jsonC = {}
             jsonC['pontos'] = str(i[1])
             jsonC['pontosDerrota'] = str(score_to_concede[i[0]])
-            jsonR[personIdName[i[0]]] = jsonC
+            jsonC['nome'] = personIdName[i[0]]
 
-        return json.dumps(jsonR, ensure_ascii=False).encode('utf8')
+            jsonList.append(jsonC)
+
+        jsonR = {}
+        jsonR['records'] = len(list)
+        jsonR['rows'] = jsonList
+
+        return json.dumps(jsonR)
 
 if __name__ == '__main__':
 
