@@ -107,7 +107,7 @@ class WerToGraph:
 
         for p, i in enumerate(list):
             jsonC = {}
-            jsonC['position'] = p
+            jsonC['position'] = p + 1
             jsonC['pontos'] = str(i[1])
             jsonC['pontosDerrota'] = str(score_to_concede[i[0]])
             jsonC['nome'] = personIdName[i[0]]
