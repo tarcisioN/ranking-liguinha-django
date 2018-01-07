@@ -7,9 +7,9 @@ from minio import Minio
 
 from helloworld.wer.werToGraph import WerToGraph
 
-client = Minio('play.minio.io:9000',
-               access_key='Q3AM3UQ867SPQQA43P2F',
-               secret_key='zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG')
+client = Minio('35.188.18.243:9000',
+               access_key='XHWHNU67FSLL3XVVI3JZ',
+               secret_key='zuf+k016QPWOqMrFgb5TjzupjgNGYqb4Vnq2OTVmoMvk')
 
 def index(request):
 
@@ -24,14 +24,14 @@ def index(request):
 
 def get_reports():
 
-    objects = client.list_objects('trcs')
+    objects = client.list_objects('liguinha')
 
     reports = []
 
     for object in objects:
 
         if '.wer' in object.object_name:
-            report = client.get_object('trcs', object.object_name)
+            report = client.get_object('liguinha', object.object_name)
 
             file_data = report.read()
 
