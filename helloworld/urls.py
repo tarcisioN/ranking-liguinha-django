@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from django.conf.urls import patterns, include
+from django.conf.urls import patterns, include, url
 from django.conf import settings
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
-
 urlpatterns = patterns('',
     # Example:
     # (r'^helloworld/', include('helloworld.foo.urls')),
@@ -17,9 +16,10 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
 
-    # Hello, world!
-    (r'', 'helloworld.views.index'),
+    url(r'ranking/(?P<pivot>\d+)', 'helloworld.views.index'),
+    (r'ranking/', 'helloworld.views.index'),
 )
+
 
 if settings.DEBUG:
     urlpatterns += patterns('',

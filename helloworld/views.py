@@ -23,11 +23,12 @@ client = Minio('35.188.18.243:9000',
                access_key='IMJ789JGQG6RTMPAORBZ',
                secret_key='j0Wi61KT/B6DOKFq1w8xwwAOARvE8fRWbXA63sDy', http_client=http)
 
-def index(request):
+
+def index(request, pivot=None):
 
     wtg = WerToGraph(get_reports())
 
-    ranking = wtg.run()
+    ranking = wtg.run(pivot)
 
     return HttpResponse(ranking)
 
