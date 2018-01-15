@@ -107,7 +107,9 @@ class WerToGraph:
                     simulated_plus_one_score_dict[v.get_id()] = dict()
 
                 if simulated_plus_one_score < 1:
-                    simulated_plus_one_score = 0
+                    #simulated_plus_one_score = 0
+                    simulated_plus_one_score_dict[v.get_id()][w.get_id()] = simulated_plus_one_score - 1
+                    continue
 
                 simulated_score = v_simple_score * score_utils.score(simulated_plus_one_score)
                 simulated_plus_one_score_dict[v.get_id()][w.get_id()] = simulated_score - this_event_score
