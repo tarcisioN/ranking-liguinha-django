@@ -91,7 +91,8 @@ class WerToGraph:
                 if vw_score < 1:
                     vw_score = 0
 
-                v_total_score += v_simple_score * score_utils.score(vw_score)
+                this_event_score = v_simple_score * score_utils.score(vw_score)
+                v_total_score += this_event_score
 
                 #inicio simulacao de vitoria
                 simulated_plus_one_score = vw_score + 1
@@ -101,7 +102,9 @@ class WerToGraph:
 
                 if simulated_plus_one_score < 1:
                     simulated_plus_one_score = 0
-                simulated_plus_one_score_dict[v.get_id()][w.get_id()] = v_simple_score * simulated_plus_one_score
+
+                simulated_score = v_simple_score * simulated_plus_one_score
+                simulated_plus_one_score_dict[v.get_id()][w.get_id()] = simulated_score - this_event_score
                 # fim simulacao de vitoria
 
             total_score[v.get_id()] = v_total_score
