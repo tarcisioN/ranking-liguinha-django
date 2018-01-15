@@ -66,6 +66,7 @@ class WerToGraph:
         total_score = {}
 
         simulated_plus_one_score_dict = dict()
+        total_wins = dict()
 
         for v in werReportGraph:
 
@@ -81,7 +82,12 @@ class WerToGraph:
 
                 vw_score = 0
 
+                if v.get_id() not in total_wins:
+                    total_wins[v.get_id()] = 0
+                
                 if w in v.adjacent: # sempre verdade?
+
+                    total_wins[v.get_id()] += v.get_weight(w)
 
                     if v in w.adjacent:
                         vw_score = v.get_weight(w) - w.get_weight(v)
@@ -121,8 +127,9 @@ class WerToGraph:
             try:
                 pontos = operator.itemgetter(1)(json)
                 pontos_derrota = score_to_concede[operator.itemgetter(0)(json)]
+                wins = total_wins[operator.itemgetter(0)(json)]
 
-                result = (float(pontos), float(pontos_derrota))
+                result = (float(pontos), float(pontos_derrota), int(wins))
                 return result
             except KeyError:
                 return 0
@@ -136,6 +143,7 @@ class WerToGraph:
             jsonC = {}
             jsonC['position'] = p + 1
             jsonC['pontos'] = "{0:.2f}".format(i[1])
+            jsonC['totalVitorias'] = total_wins[i[0]]
 
             if pivot:
                 if pivot == i[0]:
