@@ -88,8 +88,13 @@ class WerToGraph:
                     else:
                         vw_score = v.get_weight(w)
 
-                simulated_plus_one_score = vw_score + 1
-                
+                #soh para simulacao
+                if v in w.adjacent:
+                    vw_score_simulacao = 0 - w.get_weight(v)
+                    simulated_plus_one_score = vw_score_simulacao + 1
+                else:
+                    simulated_plus_one_score = vw_score + 1
+
                 if vw_score < 1:
                     vw_score = 0
 
