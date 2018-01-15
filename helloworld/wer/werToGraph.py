@@ -88,6 +88,8 @@ class WerToGraph:
                     else:
                         vw_score = v.get_weight(w)
 
+				simulated_plus_one_score = vw_score + 1
+				
                 if vw_score < 1:
                     vw_score = 0
 
@@ -95,7 +97,6 @@ class WerToGraph:
                 v_total_score += this_event_score
 
                 #inicio simulacao de vitoria
-                simulated_plus_one_score = vw_score + 1
 
                 if v.get_id() not in simulated_plus_one_score_dict:
                     simulated_plus_one_score_dict[v.get_id()] = dict()
