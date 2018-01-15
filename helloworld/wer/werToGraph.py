@@ -103,7 +103,7 @@ class WerToGraph:
                 if simulated_plus_one_score < 1:
                     simulated_plus_one_score = 0
 
-                simulated_score = v_simple_score * simulated_plus_one_score
+                simulated_score = v_simple_score * score_utils.score(simulated_plus_one_score)
                 simulated_plus_one_score_dict[v.get_id()][w.get_id()] = simulated_score - this_event_score
                 # fim simulacao de vitoria
 
