@@ -117,13 +117,13 @@ class WerToGraph:
         for p, i in enumerate(list):
             jsonC = {}
             jsonC['position'] = p + 1
-            jsonC['pontos'] ="{0:.2f}".format(i[1])
+            jsonC['pontos'] = "{0:.2f}".format(i[1])
 
             if pivot:
                 if pivot == i[0]:
                     jsonC['pontosDerrota'] = '0'
                 else:
-                    jsonC['pontosDerrota'] = simulated_plus_one_score_dict[pivot][i[0]]
+                    jsonC['pontosDerrota'] = "{0:.2f}".format(simulated_plus_one_score_dict[pivot][i[0]])
             else:
                 jsonC['pontosDerrota'] = str(score_to_concede[i[0]])
 
