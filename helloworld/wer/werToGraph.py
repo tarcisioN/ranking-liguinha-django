@@ -117,7 +117,17 @@ class WerToGraph:
 
             total_score[v.get_id()] = v_total_score
 
-        list = sorted_x = sorted(total_score.items(), key=operator.itemgetter(1), reverse=True)
+        def sort_pontos_pontos_derrota(json):
+            try:
+                pontos = operator.itemgetter(1)(json)
+                pontos_derrota = score_to_concede[operator.itemgetter(0)(json)]
+
+                result = (float(pontos), float(pontos_derrota))
+                return result
+            except KeyError:
+                return 0
+
+        list = sorted_x = sorted(total_score.items(), key=sort_pontos_pontos_derrota, reverse=True)
 
 
         jsonList = []
@@ -138,9 +148,6 @@ class WerToGraph:
             jsonC['nome'] = personIdName[i[0]]
             jsonC['id'] = i[0]
 
-            # if i[0] in simulated_plus_one_score_dict:
-            #      jsonC['pontos_simulados_oponentes'] = simulated_plus_one_score_dict[i[0]]
-
             jsonList.append(jsonC)
 
         jsonR = {}
@@ -148,6 +155,8 @@ class WerToGraph:
         jsonR['rows'] = jsonList
 
         return json.dumps(jsonR, ensure_ascii=False)
+
+
 
 if __name__ == '__main__':
 
@@ -168,4 +177,4 @@ if __name__ == '__main__':
     wtg = WerToGraph(docs)
 
     r = wtg.run('2248758')
-    print(json.loads(r)['rows'])
+    print(json.loads(r)['rows'][5])
