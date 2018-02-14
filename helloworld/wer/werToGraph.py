@@ -24,13 +24,28 @@ class WerToGraph:
 
         werReportGraph = Graph()
         personIdName = {}
+        total_pauper_events = {}
+        total_standard_events = {}
 
         for werReportJsonData in self.docs:
 
             participation = werReportJsonData['event']['participation']
-
+            event_format = werReportJsonData['event']['@format']
             for person in participation['person']:
-                personIdName[person['@id']] = person['@first'] + ' ' + person['@last']
+                person_id = person['@id']
+                personIdName[person_id] = person['@first'] + ' ' + person['@last']
+				
+                if person_id not in total_pauper_events:
+                    total_pauper_events[person_id] = 0
+					
+                if person_id not in total_standard_events:
+                    total_standard_events[person_id] = 0
+				
+                if event_format == 'CASL':
+                    total_pauper_events[person_id] = total_pauper_events[person_id] + 1
+                
+                if event_format == 'STANDARD':
+                    total_standard_events[person_id] = total_standard_events[person_id] + 1
 
             matches = werReportJsonData['event']['matches']
 
@@ -144,6 +159,8 @@ class WerToGraph:
             jsonC['position'] = p + 1
             jsonC['pontos'] = "{0:.2f}".format(i[1])
             jsonC['totalVitorias'] = total_wins[i[0]]
+            jsonC['totalPauperEvents'] = total_pauper_events[i[0]]
+            jsonC['totalStandardEvents'] = total_standard_events[i[0]]
 
             if pivot:
                 if pivot == i[0]:
