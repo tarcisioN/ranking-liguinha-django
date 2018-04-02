@@ -7,6 +7,8 @@ from helloworld.wer.graphUtil import Graph
 from helloworld.wer.scoreUtils import Score
 import glob
 
+TARGET_TOTAL_EVENTS = 0.6
+
 
 class WerToGraph:
 
@@ -93,50 +95,56 @@ class WerToGraph:
                 if w == v:
                     continue
 
-                v_simple_score = score_to_concede[w.get_id()]
+                w_simple_score = score_to_concede[w.get_id()]
 
                 vw_score = 0
 
                 if v.get_id() not in total_wins:
                     total_wins[v.get_id()] = 0
-                
-                if w in v.adjacent: # sempre verdade?
 
+                if w in v.adjacent:
                     total_wins[v.get_id()] += v.get_weight(w)
 
-                    if v in w.adjacent:
-                        vw_score = v.get_weight(w) - w.get_weight(v)
-                    else:
-                        vw_score = v.get_weight(w)
+                v_won_from_w = w in v.adjacent
+                w_won_from_v = v in w.adjacent
 
-                #soh para simulacao
-                if v in w.adjacent:
-                    vw_score_simulacao = 0 - w.get_weight(v)
-                    simulated_plus_one_score = vw_score_simulacao + 1
+                if v_won_from_w and w_won_from_v:
+                    vw_score = v.get_weight(w) - w.get_weight(v)
+                elif v_won_from_w and not w_won_from_v:
+                    vw_score = v.get_weight(w)
+                elif not v_won_from_w and w_won_from_v:
+                    vw_score = 0 - w.get_weight(v)
                 else:
-                    simulated_plus_one_score = vw_score + 1
-
-                if vw_score < 1:
                     vw_score = 0
 
-                this_event_score = v_simple_score * score_utils.score(vw_score)
+                if v_won_from_w or w_won_from_v:
+                    this_event_score = w_simple_score * score_utils.score_v2(vw_score)
+                else:
+                    this_event_score = 0
+
                 v_total_score += this_event_score
 
                 #inicio simulacao de vitoria
 
+                simulated_plus_one_score = vw_score + 1
+
                 if v.get_id() not in simulated_plus_one_score_dict:
                     simulated_plus_one_score_dict[v.get_id()] = dict()
 
-                if simulated_plus_one_score < 1:
-                    #simulated_plus_one_score = 0
-                    simulated_plus_one_score_dict[v.get_id()][w.get_id()] = simulated_plus_one_score
-                    continue
-
-                simulated_score = v_simple_score * score_utils.score(simulated_plus_one_score)
+                simulated_score = w_simple_score * score_utils.score_v2(simulated_plus_one_score)
                 simulated_plus_one_score_dict[v.get_id()][w.get_id()] = simulated_score - this_event_score
                 # fim simulacao de vitoria
 
-            total_score[v.get_id()] = v_total_score
+            docs_len = len(self.docs)
+            total_events_played = total_pauper_events[v.get_id()] + total_standard_events[v.get_id()]
+
+            len_target_total_events = docs_len * TARGET_TOTAL_EVENTS
+            percent_events_played_target_total_events = total_events_played / len_target_total_events
+
+            if percent_events_played_target_total_events > 1:
+                percent_events_played_target_total_events = 1
+
+            total_score[v.get_id()] = v_total_score * percent_events_played_target_total_events
 
         def sort_pontos_pontos_derrota(json):
             try:

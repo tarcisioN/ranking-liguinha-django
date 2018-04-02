@@ -19,9 +19,9 @@ http = urllib3.PoolManager(
                         )
             )
 
-client = Minio('35.188.18.243:9000',
-               access_key='IMJ789JGQG6RTMPAORBZ',
-               secret_key='j0Wi61KT/B6DOKFq1w8xwwAOARvE8fRWbXA63sDy', http_client=http)
+client = Minio('www.bolsadoinfinito.com.br:9000',
+               access_key='AWWT0FQLOGA327RAVNMG',
+               secret_key='9h5eWe5NwnbQkyumAXDtUA9Wfo36HueocsRhmybA', http_client=http)
 
 
 def index(request, pivot=None):
