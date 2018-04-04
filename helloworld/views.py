@@ -24,25 +24,25 @@ client = Minio('www.bolsadoinfinito.com.br:9000',
                secret_key='9h5eWe5NwnbQkyumAXDtUA9Wfo36HueocsRhmybA', http_client=http)
 
 
-def index(request, pivot=None):
+def index(request, edition='current', pivot=None):
 
-    wtg = WerToGraph(get_reports())
+    wtg = WerToGraph(get_reports(edition))
 
     ranking = wtg.run(pivot)
 
     return HttpResponse(ranking)
 
 
-def get_reports():
+def get_reports(edition):
 
-    objects = client.list_objects('liguinha')
+    objects = client.list_objects(edition)
 
     reports = []
 
     for object in objects:
 
         if '.wer' in object.object_name:
-            report = client.get_object('liguinha', object.object_name)
+            report = client.get_object(edition, object.object_name)
 
             file_data = report.read()
 
